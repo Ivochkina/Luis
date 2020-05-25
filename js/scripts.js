@@ -17,3 +17,15 @@ $(document).ready(function(){
         }
     });
 });
+
+function slideToggle(el) {
+    var elem = document.getElementById(el);
+    elem.classList.toggle("open");
+}
+
+$('a[href^="#"]').click(function(){
+    let anchor = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop:  $(anchor).offset().top
+    }, 6000);
+});

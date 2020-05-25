@@ -41,6 +41,9 @@ $color_br: #363636;
 }
 
 header {
+  .navbar{
+    border: red;
+  }
 
   padding: 15px 0;
   background-image: url("../images/h_bg_02.jpg");
@@ -51,7 +54,7 @@ header {
   .navbar-default {
     background-color: transparent;
     background-image: none;
-    border: none;
+    border: red;
 
     .navbar-toggle {
       background-color: transparent;
@@ -65,7 +68,7 @@ header {
       .icon-bar {
         width: 35px;
         height: 4px;
-        background-color: $color_w;
+        background-color: $color_dg;
       }
     }
 
@@ -162,7 +165,7 @@ header {
     font-size: 22px;
     line-height: 67px;
     color: #909090;
-    @include max-screen(767px){
+    @include max-screen(767px) {
       font-size: 16px;
     }
 
@@ -171,7 +174,8 @@ header {
   .header_img {
     margin-top: 50px;
   }
-  .btn-default{
+
+  .btn-default {
     font-family: $ff_asap;
     font-size: 16px;
     font-weight: $fw_medium;
@@ -190,13 +194,15 @@ header {
       border: none;
 
     }
-    &:focus{
+
+    &:focus {
       background-color: $color_dg;
       color: $color_w;
       outline: none;
     }
-    @include max-screen(767px){
-      &:focus{
+
+    @include max-screen(767px) {
+      &:focus {
         background-color: $color_w;
         color: $color_dg;
         outline: none;
@@ -206,15 +212,18 @@ header {
 
 
   }
-  .btn{
+
+  .btn {
     padding: 10px 33px;
+    //margin-right: 7px;
   }
-  .link{
-  .btn{
-    &:last-child{
-      padding: 10px 50px;
+
+  .link {
+    .btn {
+      &:last-child {
+        padding: 10px 50px;
+      }
     }
-  }
   }
 }
 
@@ -280,7 +289,8 @@ header {
       border: none;
 
     }
-    &:focus{
+
+    &:focus {
       background-color: $color_dg;
       color: $color_w;
       outline: none;
@@ -296,7 +306,7 @@ header {
 .servis {
   background-color: #f6f6f6;
   padding: 120px 0 40px;
-  @include max-screen(991px){
+  @include max-screen(991px) {
     padding: 80px 0 10px;
   }
 
@@ -393,7 +403,34 @@ header {
     }
   }
 
+  #box {
+    width: 100%;
+    overflow: hidden;
+
+    .portfolio_img {
+      &:hover {
+        -webkit-box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
+      }
+
+    }
+  }
+
+
+  .slider {
+    transition: all 2s ease-in-out;
+    height: 0;
+  }
+
+  .slider.open {
+    height: 320px;
+    @include max-screen(767px) {
+      height: 960px;
+    }
+  }
+
   .btn-primary {
+    margin-top: 30px;
     font-family: $ff_asap;
     font-size: 16px;
     font-weight: $fw_medium;
@@ -410,7 +447,8 @@ header {
       -webkit-box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
       box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
     }
-    &:focus{
+
+    &:active {
       background-color: $color_dg;
       color: $color_w;
       outline: none;
@@ -424,6 +462,7 @@ header {
 
 .test {
   padding: 140px 0;
+
   h3 {
     margin-bottom: 68px;
     @include h3;
@@ -440,11 +479,10 @@ header {
       background-color: #7a7a7a;
     }
   }
+
   .test_wrap {
     padding: 75px 0 40px;
     background-color: #f6f6f6;
-
-
 
 
     h5 {
@@ -465,7 +503,6 @@ header {
 
     }
   }
-
 
 
   //.owl_wrap {
@@ -557,9 +594,8 @@ p {
 //}
 
 
-
-
 .hello {
+  position: relative;
   padding: 140px 0 0;
   background-image: url("../images/f_bg_02.jpg");
   background-repeat: no-repeat;
@@ -569,7 +605,10 @@ p {
     margin-bottom: 70px;
     @include h3;
     color: #f0f0f0;
-    letter-spacing: 12px;
+    letter-spacing: 7px;
+    @include max-screen(767px) {
+      letter-spacing: 3px;
+    }
 
     &:before {
       content: "";
@@ -602,6 +641,7 @@ p {
   }
 
   textarea.form-control {
+    resize: none;
     height: 200px;
     @include max-screen(767px) {
       height: 90px;
@@ -635,12 +675,16 @@ p {
     font-size: 16px;
     font-family: $ff_asap;
     font-weight: $fw_medium;
-    &:after{
+
+    &:after {
       content: url("../images/send_76.png");
       display: inline-block;
+      position: relative;
+      top: 1px;
 
     }
-    &:focus{
+
+    &:focus {
       background-color: $color_dg;
       color: $color_w;
       outline: none;
@@ -819,7 +863,28 @@ p {
       }
     }
   }
+
+  .hello_link {
+    width: 45px;
+    height: 45px;
+    background-color: $color_w;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    right: 45px;
+    bottom: 190px;
+    color: $color_dg;
+    font-size: 24px;
+    &:before{
+      content: "\f106";
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+
+    }
+  }
 }
+
 
 input {
   &:focus {

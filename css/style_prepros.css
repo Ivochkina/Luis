@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Montserrat&display=swap");
 @import url(bootstrap.min.css);
@@ -13,18 +14,79 @@ header {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat; }
-  header .navbar {
-    border: red; }
+  header #myModal {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  header .modal-dialog {
+    margin: 15% auto;
+    border: 10px solid #ddd;
+    position: relative;
+    /*--CSS3 Тени для Блока--*/
+    /*--CSS3 Скругленные углы--*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+    @media screen and (max-width: 767px) {
+      header .modal-dialog {
+        width: 270px; } }
+  header .modal-content {
+    border: none;
+    background-color: red; }
+  header .modal-header {
+    border: none; }
+  header .modal-footer {
+    border: none; }
+  header .close {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: -24px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    top: -33px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000; }
+  header .close:hover {
+    background-color: rgba(0, 122, 200, 0.8); }
+  @media screen and (max-width: 991px) {
+    header {
+      padding: 15px 0; } }
+  @media screen and (max-width: 767px) {
+    header {
+      padding: 0; } }
   header .navbar-default {
     background-color: transparent;
     background-image: none;
-    border: red; }
+    border: none;
+    box-shadow: none; }
+    header .navbar-default .navbar-brand {
+      margin-bottom: 25px; }
     header .navbar-default .navbar-toggle {
       background-color: transparent;
       border: none;
       margin-top: 10px; }
-      header .navbar-default .navbar-toggle:hover {
-        background-color: transparent; }
+      header .navbar-default .navbar-toggle:active {
+        background-color: #ffffff; }
       header .navbar-default .navbar-toggle .icon-bar {
         width: 35px;
         height: 4px;
@@ -32,27 +94,35 @@ header {
     header .navbar-default .nav > li > a {
       margin: 10px 15px;
       padding: 0; }
-    header .navbar-default .navbar-nav li:hover a:after {
-      width: 100%; }
-    @media screen and (max-width: 767px) {
-      header .navbar-default .navbar-nav li:before {
-        display: none; } }
-    header .navbar-default .navbar-nav li a {
-      position: relative;
-      color: #4d4d4d;
-      font-family: "Asap", sans-serif;
-      font-weight: 600;
-      font-size: 16px; }
-      header .navbar-default .navbar-nav li a:after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 100%;
-        width: 0;
-        position: absolute;
-        bottom: -10px;
-        background-color: #878787;
-        transition: 0.3s; }
+    header .navbar-default .navbar-nav {
+      margin-left: 0; }
+      header .navbar-default .navbar-nav li:hover a:after {
+        width: 100%; }
+      @media screen and (max-width: 767px) {
+        header .navbar-default .navbar-nav li:before {
+          display: none; } }
+      header .navbar-default .navbar-nav li a {
+        position: relative;
+        color: #4d4d4d;
+        font-family: "Asap", sans-serif;
+        font-weight: 400;
+        font-size: 16px; }
+        @media screen and (max-width: 767px) {
+          header .navbar-default .navbar-nav li a:active {
+            color: #ffffff; } }
+        header .navbar-default .navbar-nav li a:after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 100%;
+          width: 0;
+          position: absolute;
+          bottom: -10px;
+          background-color: #878787;
+          transition: 0.3s; }
+          @media screen and (max-width: 767px) {
+            header .navbar-default .navbar-nav li a:after {
+              display: none; } }
     header .navbar-default .navbar-collapse {
       border: none;
       box-shadow: none;
@@ -64,7 +134,7 @@ header {
     margin-top: 200px;
     font-family: "Asap", sans-serif;
     font-weight: 600;
-    font-size: 90px;
+    font-size: 87px;
     line-height: 67px;
     color: #4d4d4d; }
     @media screen and (max-width: 1024px) {
@@ -73,7 +143,7 @@ header {
     @media screen and (max-width: 991px) {
       header h1 {
         font-size: 56px;
-        margin-top: 100px; } }
+        margin-top: 50px; } }
     @media screen and (max-width: 767px) {
       header h1 {
         font-size: 46px; } }
@@ -114,9 +184,8 @@ header {
         color: #4d4d4d;
         outline: none; } }
   header .btn {
-    padding: 10px 33px; }
-  header .link .btn:last-child {
-    padding: 10px 50px; }
+    padding: 10px 30px;
+    min-width: 160px; }
 
 .about {
   padding: 110px 0 125px;
@@ -236,6 +305,19 @@ header {
 .portfolio {
   background-color: #ffffff;
   padding: 100px 0; }
+  .portfolio .morph {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease; }
+  .portfolio .morph:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
   @media screen and (max-width: 991px) {
     .portfolio {
       padding: 40px 0; } }
@@ -257,6 +339,7 @@ header {
       position: absolute;
       background-color: #7a7a7a; }
   .portfolio .portfolio_img {
+    overflow: hidden;
     margin-bottom: 30px; }
     .portfolio .portfolio_img:hover {
       -webkit-box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
@@ -264,7 +347,7 @@ header {
   .portfolio #box {
     width: 100%;
     overflow: hidden; }
-    .portfolio #box .portfolio_img:hover {
+    .portfolio #box:hover {
       -webkit-box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
       box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15); }
   .portfolio .slider {
@@ -284,6 +367,9 @@ header {
     background-color: transparent;
     border-color: transparent;
     color: #4d4d4d; }
+    .portfolio .btn-primary:active {
+      background-color: #717171;
+      border: none; }
     @media screen and (max-width: 767px) {
       .portfolio .btn-primary {
         border: solid 1px #4d4d4d;
@@ -291,10 +377,6 @@ header {
     .portfolio .btn-primary:hover {
       -webkit-box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
       box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1); }
-    .portfolio .btn-primary:active {
-      background-color: #4d4d4d;
-      color: #ffffff;
-      outline: none; }
   .portfolio .btn {
     padding: 10px 25px; }
 
@@ -333,44 +415,82 @@ header {
       font-size: 22px;
       line-height: 32px;
       color: #363636; }
-
-.owl-carousel .owl-item img {
-  width: auto;
-  margin: auto; }
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around; }
-  @media screen and (max-width: 767px) {
-    .flex {
-      flex-direction: column; } }
-
-h4 {
-  margin: 0;
-  font-family: "Asap", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  color: #373737; }
-
-h6 {
-  font-family: "Asap", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 12px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #373737; }
-
-p {
-  color: #919191;
-  font-family: "Asap", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px; }
+  .test h4 {
+    margin: 0;
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #373737; }
+    @media screen and (max-width: 767px) {
+      .test h4 {
+        margin-top: 15px; } }
+  .test h6 {
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #373737; }
+  .test p {
+    color: #919191;
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px; }
+  .test .owl-wrap {
+    padding: 80px 0 40px 120px;
+    margin-bottom: 100px;
+    border: solid 1px #212121; }
+    @media screen and (max-width: 1024px) {
+      .test .owl-wrap {
+        padding: 80px 0 40px 60px; } }
+    @media screen and (max-width: 991px) {
+      .test .owl-wrap {
+        padding: 30px 15px; } }
+    @media screen and (max-width: 767px) {
+      .test .owl-wrap {
+        padding: 15px 0; } }
+  .test .owl-item img {
+    width: auto;
+    margin: auto; }
+  .test .owl-dots {
+    text-align: center;
+    margin-top: -20px;
+    outline: none !important; }
+    .test .owl-dots .owl-dot {
+      margin-top: 50px;
+      outline: none !important; }
+      .test .owl-dots .owl-dot span {
+        width: 11px;
+        height: 11px;
+        background-color: transparent;
+        border: solid 1px #212121;
+        display: inline-block;
+        margin: 0 5px; }
+  .test .owl-dots .owl-dot.active span {
+    width: 11px;
+    height: 11px;
+    background-color: #212121;
+    display: inline-block;
+    position: relative;
+    top: 0; }
+  .test .flex {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between; }
+    .test .flex .flex_wrap {
+      margin-left: 30px; }
+      @media screen and (max-width: 767px) {
+        .test .flex .flex_wrap {
+          align-items: center; } }
+    @media screen and (max-width: 767px) {
+      .test .flex {
+        flex-direction: column; } }
 
 .hello {
+  margin-top: 121px;
   position: relative;
   padding: 140px 0 0;
   background-image: url("../images/f_bg_02.jpg");
@@ -493,7 +613,7 @@ p {
             background-color: #3ec2f3;
             color: #ffffff; }
         .hello .end .social a:nth-child(3) {
-          background-color: #3ec2f3;
+          background-color: #2f6ab6;
           color: #ffffff; }
           @media screen and (min-width: 1025px) {
             .hello .end .social a:nth-child(3) {
@@ -504,7 +624,7 @@ p {
             display: inline-block;
             font-family: "Font Awesome 5 Brands", sans-serif; }
           .hello .end .social a:nth-child(3):hover {
-            background-color: #3ec2f3;
+            background-color: #2f6ab6;
             color: #ffffff; }
         .hello .end .social a:nth-child(4) {
           background-color: #e44c41;
@@ -521,7 +641,7 @@ p {
             background-color: #e44c41;
             color: #ffffff; }
         .hello .end .social a:nth-child(5) {
-          background-color: #3ec2f3;
+          background-color: #2474ff;
           color: #ffffff; }
           @media screen and (min-width: 1025px) {
             .hello .end .social a:nth-child(5) {
@@ -532,10 +652,10 @@ p {
             display: inline-block;
             font-family: "Font Awesome 5 Brands", sans-serif; }
           .hello .end .social a:nth-child(5):hover {
-            background-color: #3ec2f3;
+            background-color: #2474ff;
             color: #ffffff; }
         .hello .end .social a:last-child {
-          background-color: #3ec2f3;
+          background-color: #fe2eda;
           color: #ffffff; }
           @media screen and (min-width: 1025px) {
             .hello .end .social a:last-child {
@@ -546,9 +666,10 @@ p {
             display: inline-block;
             font-family: "Font Awesome 5 Brands", sans-serif; }
           .hello .end .social a:last-child:hover {
-            background-color: #3ec2f3;
+            background-color: #fe2eda;
             color: #ffffff; }
   .hello .hello_link {
+    text-decoration: none;
     width: 45px;
     height: 45px;
     background-color: #ffffff;
@@ -559,6 +680,13 @@ p {
     bottom: 190px;
     color: #4d4d4d;
     font-size: 24px; }
+    @media screen and (max-width: 991px) {
+      .hello .hello_link {
+        bottom: 150px;
+        right: 30px; } }
+    @media screen and (max-width: 767px) {
+      .hello .hello_link {
+        display: none; } }
     .hello .hello_link:before {
       content: "\f106";
       display: inline-block;

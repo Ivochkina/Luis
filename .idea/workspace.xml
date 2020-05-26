@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ffa204d-e7c2-4f94-8a34-eed9617efb51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/артем.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/.sass-cache/67b1e61e6e9402cd460af4385b7c18a20d26598e/style_prepros.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/css/.sass-cache/67b1e61e6e9402cd460af4385b7c18a20d26598e/style_prepros.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style_prepros.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_prepros.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style_prepros.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_prepros.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style_prepros.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_prepros.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/cup@1X.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/delivery-complete@1X.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/happiness@1X.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
     </list>
@@ -47,18 +47,19 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elegant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\Luis\icons" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\Luis\images" />
       <recent name="C:\Users\Admin\Desktop\Luis\icons" />
       <recent name="C:\Users\Admin\Desktop\start project\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Luis\icons" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -72,8 +73,17 @@
       <option name="presentableId" value="Default" />
       <updated>1590057110222</updated>
       <workItem from="1590057111499" duration="849000" />
-      <workItem from="1590232475046" duration="84328000" />
+      <workItem from="1590232475046" duration="112940000" />
+      <workItem from="1590488566014" duration="9664000" />
     </task>
+    <task id="LOCAL-00001" summary="work">
+      <created>1590430561661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590430561661</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,12 +91,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="work" />
+    <option name="LAST_COMMIT_MESSAGE" value="work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590402563566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590402563566" />
+    <state x="380" y="11" key="CommitChangelistDialog2" timestamp="1590430559991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="380" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590430559991" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1590499171654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1590499171654" />
     <state x="410" y="212" key="EditFileWatcherDialog" timestamp="1590057298110">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -95,9 +115,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590279528459" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1590430564134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590430564134" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590491325248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1590491325248" />
     <state x="462" y="270" width="663" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1590425343657">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="462" y="270" width="663" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1590425343657" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590490721160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590490721160" />
   </component>
 </project>

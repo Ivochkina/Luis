@@ -11,6 +11,34 @@
 </head>
 <body>
 <header>
+    <!-- Кнопка, открывающая модальное окно -->
+<!--    <a href="#myModal" class="btn btn-primary" data-toggle="modal">Открыть модальное окно</a>-->
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                    <h4 class="modal-title text-center text-uppercase">Hello Artem !</h4></div>
+                <h5>welcome to my landing</h5>
+                <div class="modal-body">
+
+                    are you ready to see my project               </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default  text-uppercase" data-dismiss="modal">let's go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div id="parent_popup">-->
+<!--        <div id="popup">-->
+<!--            <h3 class="text-center text-uppercase">Hello Artem</h3>-->
+<!--            <h4 class="text-uppercase text-center">Welcome for my lending</h4>-->
+<!--&lt;!&ndash;            <a href="#hello" role="button" class="btn btn-default text-uppercase ">KNOW MORE</a>&ndash;&gt;-->
+<!--            <a class="close" title="Закрыть" onclick="document.getElementById('parent_popup').style.display='none';">X</a>-->
+<!--        </div>-->
+<!--    </div>-->
+
     <div class="container">
         <div class="row">
 
@@ -24,12 +52,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a id="logo" class="navbar-brand" href="#"><img class="wow fadeInDownBig" data-wow-duration="1.5s"
-                                                              src="images/log_1_03.png" alt="Author"></a>
+                        <a id="logo" class="navbar-brand" href="#"><img class="wow fadeInDownBig"
+                                                                        data-wow-duration="1.5s"
+                                                                        src="images/log_1_03.png" alt="Author"></a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                         <ul class="nav navbar-nav navbar-right wow fadeInDownBig">
                             <li class="wow fadeInDownBig" data-wow-duration="1.5s"><a href="#">Home </a></li>
                             <li class="wow fadeInDownBig" data-wow-duration="1.6s"><a href="#">Service</a></li>
@@ -46,16 +74,23 @@
             <div class="col-sm-6 ">
                 <h1>Luis Oenrique</h1>
                 <h3>User Experience / User Interface Expert</h3>
-                <div class="link">
-                    <a href="#" class="btn btn-default text-uppercase ">KNOW MORE</a>
-                    <a href="#" class=" btn btn-default text-uppercase">HIRE ME</a>
+                    <div class="row">
+                        <div class="link">
+
+                        <div class="col-md-3">
+                            <a href="#" role="button" class="btn btn-default text-uppercase ">KNOW MORE</a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <a href="#" class=" btn btn-default text-uppercase">HIRE ME</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
-        <div class="header_img col-sm-6 "><img class="img-responsive " src="images/hedr_m_02.png" alt="foto">
+            <div class="header_img col-sm-6 "><img class="img-responsive " src="images/hedr_m_02.png" alt="foto">
+            </div>
         </div>
-    </div>
 
 
     </div>
@@ -64,19 +99,23 @@
 </header>
 <section class="about">
     <div class="container">
-        <div class="row">
-            <div class="about_info col-sm-6  wow bounceInLeft" data-wow-offset="100" data-wow-duration="2.3s">
+        <div class="row_flex">
+            <div class="about_info col-md-6  wow bounceInLeft" data-wow-offset="100" data-wow-duration="2.3s">
                 <h3>KNOW MORE<br> ABOUT ME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo-<br>do ligula eget dolor.
+                    Aenean
+                    massa. Cum sociis natoque penatibus et<br> magnis dis parturient montes, nascetur ridiculus mus.
+                    Donec
+                    quam felis,<br> ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa<br> quis
+                    enim.</p>
                 <div class="row">
                     <div class="col-md-4 col-sm-offset-7 col-md-offset-0">
                         <a href="#" class="btn btn-primary text-uppercase ">DOWNLOAD MY CV</a>
                     </div>
                 </div>
             </div>
-            <div class="about_img col-sm-6  wow bounceInRight" data-wow-offset="100" data-wow-duration="2.3s"><img class="img-responsive" src="images/about_img.png" alt="foto"></div>
+            <div class="about_img col-md-6  wow bounceInRight" data-wow-offset="100" data-wow-duration="2.3s"><img
+                    class="img-responsive" src="images/about_img.png" alt="foto"></div>
 
         </div>
     </div>
@@ -89,7 +128,7 @@
 
             <div class="col-sm-4 ">
                 <div class="wow jackInTheBox
-" data-wow-delay="1s" data-wow-duration="1.5s"><img  src="icons/1@1X.png" alt="fkf"></div>
+" data-wow-delay="1s" data-wow-duration="1.5s"><img src="icons/1@1X.png" alt="fkf"></div>
                 <h5 class="wow rotateInUpLeft
 " data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="100">User Research</h5>
             </div>
@@ -97,13 +136,13 @@
 " data-wow-delay="1s" data-wow-duration="1.5s">
                 <div><img src="icons/ic_2_17.png" alt="fkf"></div>
                 <h5 class="wow rotateInUpLeft
-" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="100">IA And Wireframes</h5>
+" data-wow-delay="1s" data-wow-duration="1s" data-wow-offset="100">IA And Wireframes</h5>
             </div>
             <div class="col-sm-4 wow jackInTheBox
 " data-wow-delay="1s" data-wow-duration="1.5s">
                 <div><img src="icons/3@1X.png" alt="fkf"></div>
                 <h5 class="wow rotateInUpLeft
-" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="100">User Testing</h5>
+" data-wow-delay="1s" data-wow-duration="1.3s" data-wow-offset="100">User Testing</h5>
             </div>
         </div>
         <div class="row text-center">
@@ -117,13 +156,13 @@
 " data-wow-delay="1s" data-wow-duration="1.5s">
                 <div class=""><img src="icons/5@1X.png" alt="fkf"></div>
                 <h5 class="wow rotateInUpRight
-" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="100">Delivery</h5>
+" data-wow-delay="1s" data-wow-duration="1.3s" data-wow-offset="100">Delivery</h5>
             </div>
             <div class="col-sm-4 wow jackInTheBox
 " data-wow-delay="1s" data-wow-duration="1.5s">
                 <div><img src="icons/6@1X.png" alt="fkf"></div>
                 <h5 class="wow rotateInUpRight
-" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-offset="100">User Research</h5>
+" data-wow-delay="1s" data-wow-duration="1s" data-wow-offset="100">User Research</h5>
             </div>
         </div>
     </div>
@@ -131,9 +170,11 @@
 <section class="skils">
     <div class="container">
         <div class="row text-center text-uppercase">
-            <h3 class="text-uppercase wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="100 ">MY SKILLS</h3>
+            <h3 class="text-uppercase wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s"
+                data-wow-offset="100 ">MY SKILLS</h3>
             <div class="col-md-12 wow flipInX
-" data-wow-delay="1s" data-wow-duration="3s" data-wow-offset="150"><img class="img-responsive center-block" src="images/skils_5_10.png" alt="m;"></div>
+" data-wow-delay="1s" data-wow-duration="3s" data-wow-offset="150"><img class="img-responsive center-block"
+                                                                        src="images/skils_5_10.png" alt="m;"></div>
         </div>
     </div>
 </section>
@@ -141,34 +182,34 @@
     <div class="container">
         <div class="row text-center text-uppercase">
             <h3 class="wow bounceInDown" data-wow-duration="2s" data-wow-offset="100">PORTFOLIO</h3>
-            <div class="portfolio_img col-sm-4 wow rotateInDownLeft" data-wow-delay="0.7s" data-wow-offset="100 ">
+            <div class="portfolio_img col-sm-4 wow rotateInDownLeft morph pic" data-wow-delay="0.7s" data-wow-offset="100">
                 <img class="img-responsive" src="images/post_1_25.png" alt="foto">
             </div>
-            <div class="portfolio_img col-sm-4 wow rotateInDownLeft" data-wow-delay="0.8s" data-wow-offset="100 ">
+            <div class="portfolio_img col-sm-4 wow rotateInDownLeft morph pic" data-wow-delay="0.8s" data-wow-offset="100 ">
                 <img class="img-responsive" src="images/post_2_27.png" alt="foto">
             </div>
-            <div class="portfolio_img col-sm-4 wow rotateInDownLeft" data-wow-delay="1s" data-wow-offset="100 ">
+            <div class="portfolio_img col-sm-4 wow rotateInDownLeft morph pic" data-wow-delay="1s" data-wow-offset="100 ">
                 <img class="img-responsive" src="images/post_3_29.png" alt="foto">
             </div>
-            <div class="portfolio_img col-sm-4 wow rotateInDownRight" data-wow-delay="1s" data-wow-offset="100 ">
+            <div class="portfolio_img col-sm-4 wow rotateInDownRight morph pic" data-wow-delay="1s" data-wow-offset="100 ">
                 <img class="img-responsive" src="images/post_4_34.png" alt="foto">
             </div>
-            <div class="portfolio_img col-sm-4 wow rotateInDownRight" data-wow-delay="0.8s" data-wow-offset="100 ">
+            <div class="portfolio_img col-sm-4 wow rotateInDownRight morph pic" data-wow-delay="0.8s" data-wow-offset="100 ">
                 <img class="img-responsive" src="images/post_5_35.png" alt="foto">
             </div>
-            <div class="portfolio_img col-sm-4 wow rotateInDownRight" data-wow-delay="0.7s" data-wow-offset="100 ">
+            <div class="portfolio_img col-sm-4 wow rotateInDownRight morph pic" data-wow-delay="0.7s" data-wow-offset="100 ">
                 <img class="img-responsive" src="images/post_6_36.png" alt="foto">
             </div>
 
             <div id="box" class="slider">
-                <div class="portfolio_img col-sm-4 ">
+                <div class="portfolio_img col-sm-4 morph pic ">
                     <img class="img-responsive" src="images/post_1_25.png" alt="foto">
                 </div>
 
-            <div class="portfolio_img col-sm-4">
+                <div class="portfolio_img col-sm-4 morph pic">
                     <img class="img-responsive" src="images/post_2_27.png" alt="foto">
                 </div>
-                <div class="portfolio_img col-sm-4">
+                <div class="portfolio_img col-sm-4 morph pic">
                     <img class="img-responsive" src="images/post_3_29.png" alt="foto">
                 </div>
 
@@ -184,48 +225,73 @@
 </section>
 
 
-<!--        <div class="owl_wrap center-block">-->
-<!--            <div class="owl-carousel">-->
-<!--                <div class="flex">-->
-<!--                <div class="owl-carousel_img"><img src="images/owl_f.png"></div>-->
-
-<!--                <div class="wrap">-->
-<!--                    <h4>Limara tusi </h4>-->
-<!--                    <h6>CEO, RanDOM COMPANY</h6>-->
-<!--                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.-->
-<!--                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur-->
-<!--                        ridiculus mus. Donec quam felis, ultricies nec,</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--                <div class="flex">-->
-<!--                    <div class="owl-carousel_img"><img src="images/owl_f.png"></div>-->
-
-<!--                    <div class="wrap">-->
-<!--                        <h4>Limara tusi </h4>-->
-<!--                        <h6>CEO, RanDOM COMPANY</h6>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.-->
-<!--                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur-->
-<!--                            ridiculus mus. Donec quam felis, ultricies nec,</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="flex">-->
-<!--                    <div class="owl-carousel_img"><img src="images/owl_f.png"></div>-->
-
-<!--                    <div class="wrap">-->
-<!--                        <h4>Limara tusi </h4>-->
-<!--                        <h6>CEO, RanDOM COMPANY</h6>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.-->
-<!--                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur-->
-<!--                            ridiculus mus. Donec quam felis, ultricies nec,</p>-->
-<!--                    -->
-<!--            </div>-->
-<!--        </div>-->
 <section class="test">
     <div class="container">
         <div class="row text-uppercase text-center">
             <h3 class="wow bounceInDown" data-wow-duration="2s" data-wow-offset="100">TESTIMONIALS</h3>
         </div>
+        <div class="row col-md-10 col-md-offset-1">
+            <div class="owl-wrap">
+                <div class="owl-carousel">
+                    <div>
+                        <div class="flex">
+
+                            <img src="images/owl_f.png" alt="foto">
+
+                            <div class="flex_wrap">
+
+                                <h4>Limara tusi </h4>
+                                <h6>CEO, RanDOM COMPANY</h6>
+                                <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque<br> penatibus et magnis dis parturient
+                                    montes,
+                                    nascetur ridiculus mus.
+                                    <br> Donec quam felis, ultricies nec,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex">
+                            <img src="images/owl_f.png" alt="foto">
+
+                            <div class="flex_wrap">
+                                <h4>Limara tusi </h4>
+                                <h6>CEO, RanDOM COMPANY</h6>
+                                <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque<br> penatibus et magnis dis parturient
+                                    montes,
+                                    nascetur ridiculus mus.
+                                    <br> Donec quam felis, ultricies nec,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex">
+                            <img src="images/owl_f.png" alt="foto">
+                            <div class="flex_wrap">
+
+                                <h4>Limara tusi </h4>
+                                <h6>CEO, RanDOM COMPANY</h6>
+                                <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque<br> penatibus et magnis dis parturient
+                                    montes,
+                                    nascetur ridiculus mus.
+                                    <br> Donec quam felis, ultricies nec,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+
     <div class="test_wrap text-center">
         <div class="container">
 
@@ -281,7 +347,7 @@
                     </button>
                 </div>
             </form>
-            <a class="hello_link" href="#logo"></a>
+            <a id="hello" class="hello_link" href="#logo"></a>
 
         </div>
         <div class="end">
@@ -307,7 +373,9 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 <script src="js/owl.carousel.min.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 <script src="wow-animation/wow.min.js"></script>
 <script src="js/scripts.js"></script>

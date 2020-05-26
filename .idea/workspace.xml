@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ffa204d-e7c2-4f94-8a34-eed9617efb51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/артем.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/.sass-cache/67b1e61e6e9402cd460af4385b7c18a20d26598e/style_prepros.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/css/.sass-cache/67b1e61e6e9402cd460af4385b7c18a20d26598e/style_prepros.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style_prepros.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_prepros.css" afterDir="false" />
@@ -74,7 +72,7 @@
       <updated>1590057110222</updated>
       <workItem from="1590057111499" duration="849000" />
       <workItem from="1590232475046" duration="112940000" />
-      <workItem from="1590488566014" duration="9664000" />
+      <workItem from="1590488566014" duration="30844000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1590430561661</created>
@@ -83,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590430561661</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" wk">
+      <created>1590499556672</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590499556672</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,17 +97,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="work" />
-    <option name="LAST_COMMIT_MESSAGE" value="work" />
+    <MESSAGE value=" wk" />
+    <option name="LAST_COMMIT_MESSAGE" value=" wk" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590402563566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590402563566" />
-    <state x="380" y="11" key="CommitChangelistDialog2" timestamp="1590430559991">
+    <state x="380" y="11" key="CommitChangelistDialog2" timestamp="1590499555114">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="380" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590430559991" />
+    <state x="380" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590499555114" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1590499171654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -115,10 +121,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590279528459" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1590430564134">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1590499558921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590430564134" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590499558921" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590491325248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

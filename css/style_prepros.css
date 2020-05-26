@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Montserrat&display=swap");
 @import url(bootstrap.min.css);
@@ -14,6 +13,19 @@ header {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat; }
+  header h2 {
+    position: relative;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #4d4d4d; }
+    header h2 i {
+      position: relative;
+      bottom: 7px;
+      font-size: 40px;
+      font-weight: 900;
+      margin-left: 10px;
+      color: #36e9d6; }
   header #myModal {
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
@@ -23,51 +35,45 @@ header {
     right: 0;
     bottom: 0;
     left: 0; }
-  header .modal-dialog {
-    margin: 15% auto;
-    border: 10px solid #ddd;
-    position: relative;
-    /*--CSS3 Тени для Блока--*/
-    /*--CSS3 Скругленные углы--*/
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px; }
-    @media screen and (max-width: 767px) {
-      header .modal-dialog {
-        width: 270px; } }
-  header .modal-content {
-    border: none;
-    background-color: red; }
-  header .modal-header {
-    border: none; }
-  header .modal-footer {
-    border: none; }
-  header .close {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid #ccc;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    position: absolute;
-    right: -24px;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-    top: -33px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000; }
-  header .close:hover {
-    background-color: rgba(0, 122, 200, 0.8); }
+    header #myModal .modal-dialog {
+      background: #fff;
+      margin: 15% auto;
+      border: 10px solid #ddd;
+      position: relative;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+      @media screen and (max-width: 767px) {
+        header #myModal .modal-dialog {
+          width: 270px; } }
+    header #myModal .modal-content {
+      background-image: url("../images/h_bg_02.jpg");
+      padding: 10px 0;
+      border: none;
+      background-color: #ffffff; }
+    header #myModal .modal-header {
+      border: none; }
+    header #myModal .modal-footer {
+      border: none; }
+    header #myModal h5 {
+      font-family: "Asap", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #4d4d4d; }
+    header #myModal .modal-body {
+      color: #3b5997; }
+      header #myModal .modal-body .h4 {
+        font-weight: 700;
+        font-family: "Asap", sans-serif;
+        font-size: 22px; }
+    header #myModal .btn-primary {
+      background-image: none;
+      border: none;
+      color: #4d4d4d;
+      background-color: #36e9d6; }
+      header #myModal .btn-primary:hover {
+        -webkit-box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 991px) {
     header {
       padding: 15px 0; } }
@@ -143,7 +149,7 @@ header {
     @media screen and (max-width: 991px) {
       header h1 {
         font-size: 56px;
-        margin-top: 50px; } }
+        margin-top: 100px; } }
     @media screen and (max-width: 767px) {
       header h1 {
         font-size: 46px; } }
@@ -154,7 +160,7 @@ header {
     font-size: 22px;
     line-height: 67px;
     color: #909090; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       header h3 {
         font-size: 16px; } }
   header .header_img {
@@ -170,6 +176,7 @@ header {
     border-radius: 0;
     margin-bottom: 30px; }
     header .btn-default:hover {
+      color: #4d4d4d;
       -webkit-box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
       box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
@@ -186,20 +193,23 @@ header {
   header .btn {
     padding: 10px 30px;
     min-width: 160px; }
+  header .hvr-radial-out:before {
+    background-color: #ffffff;
+    color: #4d4d4d; }
 
 .about {
   padding: 110px 0 125px;
   background-color: #ffffff; }
+  .about .hvr-radial-out:before {
+    background-color: #ffffff;
+    color: #4d4d4d; }
+  .about .about_img {
+    padding: 0 0 65px; }
   @media screen and (max-width: 991px) {
     .about {
       padding: 40px 0; } }
   .about .about_info {
-    position: relative;
-    top: 63px; }
-    @media screen and (max-width: 991px) {
-      .about .about_info {
-        position: relative;
-        top: 0; } }
+    padding: 67px 0; }
   .about h3 {
     position: relative;
     font-family: "Asap", sans-serif;
@@ -235,10 +245,6 @@ header {
       box-shadow: 0 18px 27px 2.32px rgba(0, 0, 0, 0.1);
       background-color: #dedede;
       border: none; }
-    .about .btn-primary:focus {
-      background-color: #4d4d4d;
-      color: #ffffff;
-      outline: none; }
   .about .btn {
     padding: 10px 47px; }
 
@@ -305,19 +311,20 @@ header {
 .portfolio {
   background-color: #ffffff;
   padding: 100px 0; }
-  .portfolio .morph {
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    -ms-transition: all 1.5s ease;
-    transition: all 1.5s ease; }
-  .portfolio .morph:hover {
-    border-radius: 50%;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg); }
+  .portfolio .flex {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .portfolio .flex {
+        flex-direction: column;
+        padding: 0; } }
+    .portfolio .flex img {
+      margin-bottom: 15px; }
+      .portfolio .flex img:hover {
+        -webkit-box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15); }
   @media screen and (max-width: 991px) {
     .portfolio {
       padding: 40px 0; } }
@@ -339,12 +346,9 @@ header {
       position: absolute;
       background-color: #7a7a7a; }
   .portfolio .portfolio_img {
-    overflow: hidden;
-    margin-bottom: 30px; }
-    .portfolio .portfolio_img:hover {
-      -webkit-box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15);
-      box-shadow: 0 0 37px 17px rgba(0, 0, 0, 0.15); }
+    padding: 0 15px; }
   .portfolio #box {
+    background-color: transparent;
     width: 100%;
     overflow: hidden; }
     .portfolio #box:hover {
@@ -423,7 +427,8 @@ header {
     color: #373737; }
     @media screen and (max-width: 767px) {
       .test h4 {
-        margin-top: 15px; } }
+        margin-top: 15px;
+        text-align: center; } }
   .test h6 {
     font-family: "Asap", sans-serif;
     font-weight: 600;
@@ -432,11 +437,14 @@ header {
     margin-top: 0;
     margin-bottom: 20px;
     color: #373737; }
+    @media screen and (max-width: 767px) {
+      .test h6 {
+        text-align: center; } }
   .test p {
     color: #919191;
     font-family: "Asap", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px; }
   .test .owl-wrap {
     padding: 80px 0 40px 120px;
@@ -446,9 +454,6 @@ header {
       .test .owl-wrap {
         padding: 80px 0 40px 60px; } }
     @media screen and (max-width: 991px) {
-      .test .owl-wrap {
-        padding: 30px 15px; } }
-    @media screen and (max-width: 767px) {
       .test .owl-wrap {
         padding: 15px 0; } }
   .test .owl-item img {
@@ -484,18 +489,25 @@ header {
       margin-left: 30px; }
       @media screen and (max-width: 767px) {
         .test .flex .flex_wrap {
+          margin-left: 0;
           align-items: center; } }
+    @media screen and (max-width: 991px) {
+      .test .flex {
+        padding: 0 15px; } }
     @media screen and (max-width: 767px) {
       .test .flex {
-        flex-direction: column; } }
+        flex-direction: column;
+        padding: 0 15px; } }
 
 .hello {
-  margin-top: 121px;
   position: relative;
   padding: 140px 0 0;
   background-image: url("../images/f_bg_02.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  .hello .hvr-radial-out:before {
+    background-color: #717171;
+    color: #ffffff; }
   .hello h3 {
     margin-bottom: 70px;
     position: relative;
@@ -518,8 +530,6 @@ header {
       margin-left: -30px;
       position: absolute;
       background-color: #7a7a7a; }
-  .hello form {
-    max-width: 770px; }
   .hello .form-control {
     height: 57px;
     font-size: 16px;
@@ -559,6 +569,8 @@ header {
       display: inline-block;
       position: relative;
       top: 1px; }
+    .hello .btn-default:hover {
+      color: #ffffff; }
     .hello .btn-default:focus {
       background-color: #4d4d4d;
       color: #ffffff;
@@ -680,6 +692,13 @@ header {
     bottom: 190px;
     color: #4d4d4d;
     font-size: 24px; }
+    .hello .hello_link:hover {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      line-height: 50px;
+      text-align: center;
+      border: 2px solid #ffffff; }
     @media screen and (max-width: 991px) {
       .hello .hello_link {
         bottom: 150px;
@@ -687,11 +706,25 @@ header {
     @media screen and (max-width: 767px) {
       .hello .hello_link {
         display: none; } }
-    .hello .hello_link:before {
-      content: "\f106";
-      display: inline-block;
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900; }
+    .hello .hello_link i {
+      color: #4d4d4d; }
+      .hello .hello_link i:hover {
+        color: #ffffff; }
+
+.morph {
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  transition: all 3s ease; }
+
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg); }
 
 input:focus {
   outline: none; }

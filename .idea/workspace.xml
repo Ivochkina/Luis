@@ -20,6 +20,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -72,7 +86,7 @@
       <updated>1590057110222</updated>
       <workItem from="1590057111499" duration="849000" />
       <workItem from="1590232475046" duration="112940000" />
-      <workItem from="1590488566014" duration="30844000" />
+      <workItem from="1590488566014" duration="45586000" />
     </task>
     <task id="LOCAL-00001" summary="work">
       <created>1590430561661</created>
@@ -88,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590499556672</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1590522777918</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590522777918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,17 +119,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="work" />
     <MESSAGE value=" wk" />
-    <option name="LAST_COMMIT_MESSAGE" value=" wk" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590402563566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590402563566" />
-    <state x="380" y="11" key="CommitChangelistDialog2" timestamp="1590499555114">
+    <state x="380" y="11" key="CommitChangelistDialog2" timestamp="1590522776089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="380" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590499555114" />
+    <state x="380" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590522776089" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1590499171654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -121,10 +143,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590279528459" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1590499558921">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1590522779453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590499558921" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590522779453" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590491325248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
